@@ -20,7 +20,7 @@ const gif = require("gif-search");
 
 const client = new Discord.Client({disableEveryone: true});
 
-const prefix = "your prefix here";
+const prefix = "z";
 /////////////////////////
 ////////////////////////
 
@@ -313,30 +313,30 @@ function play(guild, song) {
 
 
 client.on('message', message => {
-    if (message.content === 'help') {
+    if (message.content === 'zhelp') {
         let helpEmbed = new Discord.RichEmbed()
         .setTitle('**أوامر الميوزك...**')
-        .setDescription('**برفكس البوت (!)**')
-        .addField('play', 'لتشغيل اغنية')
-        .addField('join', 'دخول رومك الصوتي')
-        .addField('disconnect', 'الخروج من رومك الصوتي')
-        .addField('skip', 'تخطي الأغنية')
-        .addField('pause', 'ايقاف الاغنية مؤقتا')
-        .addField('resume', 'تكملة الاغنية')
-        .addField('queue', 'اظهار قائمة التشغيل')
-        .addField('np', 'اظهار الاغنية اللي انت مشغلها حاليا')
-        .setFooter('(general_commands) لاظهار الاوامر العامة')
+        .setDescription('**برفكس البوت (z)**')
+        .addField('zplay', 'لتشغيل اغنية')
+        .addField('zjoin', 'دخول رومك الصوتي')
+        .addField('zdisconnect', 'الخروج من رومك الصوتي')
+        .addField('zskip', 'تخطي الأغنية')
+        .addField('zpause', 'ايقاف الاغنية مؤقتا')
+        .addField('zresume', 'تكملة الاغنية')
+        .addField('zqueue', 'اظهار قائمة التشغيل')
+        .addField('znp', 'اظهار الاغنية اللي انت مشغلها حاليا')
+        .setFooter('(zgeneral_commands) لاظهار الاوامر العامة')
       message.channel.send(helpEmbed);
     }
 });
 
 client.on('message', message => {
-    if (message.content === 'general_commands') {
+    if (message.content === 'zgeneral_commands') {
         let helpEmbed = new Discord.RichEmbed()
         .setTitle('**أوامر عامة...**')
-        .addField('avatar', "افاتار الشخص المطلوب")
-        .addField('gif', 'البحث عن جيف انت تطلبه')
-        .addField('ping', 'معرفة ping البوت')
+        .addField('zavatar', "افاتار الشخص المطلوب")
+        .addField('zgif', 'البحث عن جيف انت تطلبه')
+        .addField('zping', 'معرفة ping البوت')
         .setFooter('المزيد قريبا ان شاء الله!')
       message.channel.send(helpEmbed);
     }
@@ -344,12 +344,12 @@ client.on('message', message => {
 
 client.on('ready', () => {
    console.log(`----------------`);
-      console.log(`Music Bot- Script By : CF Na World Clan`);
+      console.log(`Music Bot- Script By : abdou_dz`);
         console.log(`----------------`);
-      console.log(`ON ${client.guilds.size} Servers '     Script By : CF Na World Clan ' `);
+      console.log(`ON ${client.guilds.size} Servers '     Script By : abdou_Dz ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`Toxic Codes Team`,"http://twitch.tv/Toxic Codes")
+client.user.setGame(`Test`,"http://twitch.tv/abdoufersaoui_dz")
 client.user.setStatus("dnd")
 });
 
