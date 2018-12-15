@@ -20,7 +20,7 @@ const gif = require("gif-search");
 
 const client = new Discord.Client({disableEveryone: true});
 
-const prefix = "z";
+const prefix = ".T";
 /////////////////////////
 ////////////////////////
 
@@ -313,31 +313,29 @@ function play(guild, song) {
 
 
 client.on('message', message => {
-    if (message.content === 'zhelp') {
+    if (message.content === '.Thelp') {
         let helpEmbed = new Discord.RichEmbed()
         .setTitle('**أوامر الميوزك...**')
-        .setDescription('**برفكس البوت (z)**')
-        .addField('zplay', 'لتشغيل اغنية')
-        .addField('zjoin', 'دخول رومك الصوتي')
-        .addField('zdisconnect', 'الخروج من رومك الصوتي')
-        .addField('zskip', 'تخطي الأغنية')
-        .addField('zpause', 'ايقاف الاغنية مؤقتا')
-        .addField('zresume', 'تكملة الاغنية')
-        .addField('zqueue', 'اظهار قائمة التشغيل')
-        .addField('znp', 'اظهار الاغنية اللي انت مشغلها حاليا')
-        .setFooter('(zgeneral_commands) لاظهار الاوامر العامة')
+        .setDescription('**برفكس البوت (.T)**')
+        .addField('.Tplay', 'لتشغيل اغنية')
+        .addField('.Tjoin', 'دخول رومك الصوتي')
+        .addField('.Tdisconnect', 'الخروج من رومك الصوتي')
+        .addField('.Tskip', 'تخطي الأغنية')
+        .addField('.Tpause', 'ايقاف الاغنية مؤقتا')
+        .addField('.Tresume', 'تكملة الاغنية')
+        .addField('.Tqueue', 'اظهار قائمة التشغيل')
+        .addField('.Tnp', 'اظهار الاغنية اللي انت مشغلها حاليا')
+        .setFooter('(.Tgeneral_commands) لاظهار الاوامر العامة')
       message.channel.send(helpEmbed);
     }
 });
 
 client.on('message', message => {
-    if (message.content === 'zgeneral_commands') {
+    if (message.content === '.Tgeneral_commands') {
         let helpEmbed = new Discord.RichEmbed()
         .setTitle('**أوامر عامة...**')
-        .addField('zavatar', "افاتار الشخص المطلوب")
-        .addField('zgif', 'البحث عن جيف انت تطلبه')
-        .addField('zping', 'معرفة ping البوت')
-        .setFooter('المزيد قريبا ان شاء الله!')
+        .addField('.Tavatar', "افاتار الشخص المطلوب")
+        .addField('.Tping', 'معرفة ping البوت')
       message.channel.send(helpEmbed);
     }
 });
@@ -349,7 +347,7 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers '     Script By : abdou_Dz ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`Test`,"http://twitch.tv/abdoufersaoui_dz")
+client.user.setGame(`.Thelp <<.Shouuq>>`,"http://twitch.tv/abdoufersaoui_dz")
 client.user.setStatus("dnd")
 });
 
