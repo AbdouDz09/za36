@@ -347,7 +347,7 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers '     Script By : abdou_Dz ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`.Thelp <<.Shouuq>>`,"http://twitch.tv/abdoufersaoui_dz")
+client.user.setGame(`.Shouuq`,"http://twitch.tv/abdoufersaoui_dz")
 client.user.setStatus("dnd")
 });
 
